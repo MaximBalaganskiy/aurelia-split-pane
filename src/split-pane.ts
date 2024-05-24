@@ -51,6 +51,7 @@ export class SplitPane implements ComponentAttached, ComponentDetached, Componen
     detached(): void {
         for (let divider of this.dividers) {
             divider.detached();
+            divider.element.remove();
         }
     }
 
