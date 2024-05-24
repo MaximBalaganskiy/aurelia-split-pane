@@ -25,7 +25,7 @@ export class SplitPaneDivider implements ComponentBind, ComponentDetached {
     private previousSiblingSize = 0;
     private nextSiblingSize = 0;
 
-    private readonly element: Element;
+    public readonly element: Element;
     private readonly events: EventAggregator;
 
     constructor(element: any, events: EventAggregator) {
